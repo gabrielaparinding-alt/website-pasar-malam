@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasar Malam Ceria</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff7ed;
+            color: #431407;
+        }
+
+        header {
+            background: #581c87;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            color: #fde047;
+            font-size: 32px;
+            margin: 0 0 10px;
+        }
+
+        nav {
+            background: #ea580c;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #7e22ce, #f97316);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+        }
+
+        .hero button {
+            background: #fde047;
+            color: #431407;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 220px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px #00000015;
+        }
+
+        .card .emoji {
+            font-size: 50px;
+        }
+
+        .harga {
+            color: #ea580c;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #581c87;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎡 Pasar Malam Ceria</h1>
+        <p>Malam meriah, makanan menyelerakan!</p>
+    </header>
+
+    <nav>
+        <a href="#utama">Utama</a>
+        <a href="#makanan">Makanan</a>
+        <a href="#maklumat">Maklumat</a>
+    </nav>
+
+    <div class="hero" id="utama">
+        <h2>Selamat Datang ke Pasar Malam!</h2>
+        <p>Pelbagai makanan, permainan dan hiburan
+           untuk seisi keluarga.</p>
+        <button onclick="lihatMenu()">
+            Lihat Menu
+        </button>
+    </div>
+
+    <section id="makanan">
+        <h2>🍜 Gerai Makanan Kami</h2>
+
+        <div class="menu">
+
+            <div class="card">
+                <div class="emoji">🍢</div>
+                <h3>Sate Ayam</h3>
+                <p>Sate panas bersama kuah kacang.</p>
+                <p class="harga">RM 2.00 / cucuk</p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🥞</div>
+                <h3>Apam Balik</h3>
+                <p>Rangup di luar, lembut di dalam.</p>
+                <p class="harga">RM 3.00</p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🧋</div>
+                <h3>Air Balang</h3>
+                <p>Minuman sejuk pelbagai perisa.</p>
+                <p class="harga">RM 2.50</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="maklumat">
+        <h2>📍 Maklumat Pasar Malam</h2>
+        <p><strong>Hari:</strong> Jumaat hingga Ahad</p>
+        <p><strong>Waktu:</strong> 6:00 petang – 12:00 malam</p>
+        <p><strong>Lokasi:</strong> Dataran Pasar Malam</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Pasar Malam Ceria</p>
+        <p>Terima kasih kerana berkunjung!</p>
+    </footer>
+
+    <script>
+        function lihatMenu() {
+            document.getElementById("makanan")
+                .scrollIntoView({
+                    behavior: "smooth"
+                });
+        }
+    </script>
+
+</body>
+</html>
